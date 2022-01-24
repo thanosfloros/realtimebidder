@@ -6,8 +6,6 @@ import com.projectagora.DTO.MobileDevice;
 
 import java.util.Random;
 
-import static com.projectagora.tools.Constants.GREECE_LONGITUDE;
-
 public class Helper {
     public static String getRandomNumberUsingNextInt(int min, int max) {
         Random random = new Random();
@@ -49,8 +47,8 @@ public class Helper {
         double longitude = 24.569;
         double latitude = 38.9838;
         if("Greece".equals(country)){
-            longitude = Constants.GREECE_LONGITUDE;
-            latitude = Constants.GREECE_LATITUDE;
+            longitude = Constants.ATHENS_LONGITUDE;
+            latitude = Constants.ATHENS_LATITUDE;
         }
         MobileApp mobileApp = new MobileApp(Helper.getRandomNumberUsingNextInt(0, 100), "MyFitnessPal");
         MobileDevice mobileDevice =

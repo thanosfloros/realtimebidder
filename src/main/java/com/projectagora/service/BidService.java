@@ -3,6 +3,7 @@ package com.projectagora.service;
 import com.projectagora.DTO.BidRequest;
 import com.projectagora.DTO.BidResponse;
 import com.projectagora.DTO.Campaign;
+import com.projectagora.InvalidCountryException;
 import com.projectagora.tools.Helper;
 import com.projectagora.web.BidController;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,13 @@ public class BidService {
     @Autowired
     private CampaignService campaignService;
 
-    public BidResponse findBestBid(BidRequest bid) {
+    /**
+     * Find best bid using the incoming request
+     * @param bid
+     * @return
+     * @throws InvalidCountryException
+     */
+    public BidResponse findBestBid(BidRequest bid) throws InvalidCountryException {
         List<Campaign> campaigns =
                 campaignService.findCampaignsMatchingCriteria(bid.getMobileDevice().getCountry(),
                 Helper.getLocation(bid.getMobileDevice().getLatitude(),

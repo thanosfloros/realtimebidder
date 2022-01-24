@@ -1,8 +1,10 @@
 package com.projectagora.service;
 
 import com.projectagora.DTO.Campaign;
+import com.projectagora.InvalidCountryException;
 import com.projectagora.tools.Constants;
 import com.projectagora.tools.Helper;
+import com.projectagora.tools.IsoUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -31,11 +33,11 @@ public class CampaignService {
         Campaign campaign =
                 new Campaign("campaign"+ Helper.getRandomNumberUsingNextInt(),Helper.getRandomNumberUsingNextInt(),
                         Helper.getCreative(),
-                        "Greece", "Athens");
+                        "GR", "Athens");
         Campaign campaign2 =
                 new Campaign("campaign"+ Helper.getRandomNumberUsingNextInt(),Helper.getRandomNumberUsingNextInt(),
                         Helper.getCreative(),
-                        "France", "Paris");
+                        "FR", "Paris");
         list.add(campaign);
         list.add(campaign2);
         return list;
@@ -48,7 +50,10 @@ public class CampaignService {
      * @param location
      * @return List<Campaign>
      */
-    public List<Campaign> findCampaignsMatchingCriteria(String country, String location)  {
+    public List<Campaign> findCampaignsMatchingCriteria(String country, String location) throws InvalidCountryException {
+        if(!IsoUtil.isValidISOCountry(country))
+            throw new InvalidCountryException();
+
         LOGGER.info("find campaigns matching country="+country+ " and location="+location);
         List<Campaign> campaigns = getCampaigns().stream().filter(in ->
                 (in.getTargetedCountries().equals(country) || in.getTargetedCountries().equals(Constants.ALL_COUNTRIES))

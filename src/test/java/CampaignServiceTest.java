@@ -1,4 +1,5 @@
 import com.projectagora.DTO.*;
+import com.projectagora.InvalidCountryException;
 import com.projectagora.RealTimeBidderApp;
 import com.projectagora.service.BidService;
 import com.projectagora.service.CampaignService;
@@ -27,27 +28,18 @@ public class CampaignServiceTest {
     }
 
     @Test
-    void findCampaignsMatchingCriteriaTest()  {
+    void findCampaignsMatchingCriteriaGreeceTest() throws InvalidCountryException {
         List<Campaign> list =
-                campaignService.findCampaignsMatchingCriteria("ALL COUNTRIES",
-                "ALL LOCATIONS");
-        assertNotNull(list);
-        assertEquals(10, list.size());
-    }
-
-    @Test
-    void findCampaignsMatchingCriteriaGreeceTest()  {
-        List<Campaign> list =
-                campaignService.findCampaignsMatchingCriteria("Greece",
+                campaignService.findCampaignsMatchingCriteria("GR",
                         "Athens");
         assertNotNull(list);
         assertEquals(11, list.size());
     }
 
     @Test
-    void findCampaignsMatchingCriteriaFranceTest()  {
+    void findCampaignsMatchingCriteriaFranceTest() throws InvalidCountryException {
         List<Campaign> list =
-                campaignService.findCampaignsMatchingCriteria("France",
+                campaignService.findCampaignsMatchingCriteria("FR",
                         "Paris");
         assertNotNull(list);
         assertEquals(11, list.size());

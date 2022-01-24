@@ -2,6 +2,7 @@ package com.projectagora.web;
 
 import com.projectagora.DTO.BidRequest;
 import com.projectagora.DTO.BidResponse;
+import com.projectagora.InvalidCountryException;
 import com.projectagora.service.BidService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +16,14 @@ public class BidController {
     @Autowired
     private BidService bidService;
 
+    /**
+     * Receive a request and respond with the best bid
+     * @param bid
+     * @return
+     * @throws InvalidCountryException
+     */
     @PostMapping("/bids")
-    public BidResponse sendBidRequest(@RequestBody BidRequest bid) {
+    public BidResponse sendBidRequest(@RequestBody BidRequest bid) throws InvalidCountryException {
         LOGGER.info("Inbound request: "+bid.toString());
         BidResponse bidResponse = bidService.findBestBid(bid);
         return bidResponse;
