@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 import java.util.List;
+import java.util.Locale;
 
 import static com.projectagora.tools.Helper.generateBid;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -39,7 +40,7 @@ public class CampaignServiceTest {
     @Test
     void findCampaignsMatchingCriteriaFranceTest() throws InvalidCountryException {
         List<Campaign> list =
-                campaignService.findCampaignsMatchingCriteria("FR",
+                campaignService.findCampaignsMatchingCriteria(Locale.FRANCE.getCountry(),
                         "Paris");
         assertNotNull(list);
         assertEquals(11, list.size());

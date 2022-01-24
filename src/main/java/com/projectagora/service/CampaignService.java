@@ -37,7 +37,7 @@ public class CampaignService {
         Campaign campaign2 =
                 new Campaign("campaign"+ Helper.getRandomNumberUsingNextInt(),Helper.getRandomNumberUsingNextInt(),
                         Helper.getCreative(),
-                        "FR", "Paris");
+                        Locale.FRANCE.getCountry(), "Paris");
         list.add(campaign);
         list.add(campaign2);
         return list;

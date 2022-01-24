@@ -46,7 +46,7 @@ public class Helper {
     public static BidRequest generateBid(String country){
         double longitude = 24.569;
         double latitude = 38.9838;
-        if("Greece".equals(country)){
+        if("GR".equals(country)){
             longitude = Constants.ATHENS_LONGITUDE;
             latitude = Constants.ATHENS_LATITUDE;
         }
