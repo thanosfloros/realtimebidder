@@ -1,4 +1,4 @@
-package com.projectagora.DTO;
+package com.thanosfloros.DTO;
 
 public class MobileDevice {
     private String id;

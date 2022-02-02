@@ -42,7 +42,7 @@ In the main menu, choose `File -> New -> Project from existing sources` and sel
 
 When the server is running open your browser and call the APIs using swagger
 
-[Project_Agora_APIs](http://localhost:8080/swagger-ui/#/)
+[Real_Time_Bidder_APIs](http://localhost:8080/swagger-ui/#/)
 
 2) Run the tests 
 

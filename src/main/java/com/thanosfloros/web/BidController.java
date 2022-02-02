@@ -1,9 +1,9 @@
-package com.projectagora.web;
+package com.thanosfloros.web;
 
-import com.projectagora.DTO.BidRequest;
-import com.projectagora.DTO.BidResponse;
-import com.projectagora.InvalidCountryException;
-import com.projectagora.service.BidService;
+import com.thanosfloros.DTO.BidRequest;
+import com.thanosfloros.DTO.BidResponse;
+import com.thanosfloros.InvalidCountryException;
+import com.thanosfloros.service.BidService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -91,7 +91,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-            <start-class>com.projectagora.RealTimeBidderApp</start-class>
+            <start-class>com.thanosfloros.RealTimeBidderApp</start-class>
     </properties>
 
     <parent>
@@ -112,7 +112,7 @@
                         <configuration>
                             <classifier>spring-boot</classifier>
                             <mainClass>
-                                com.projectagora.RealTimeBidderApp
+                                com.thanosfloros.RealTimeBidderApp
                             </mainClass>
                         </configuration>
                     </execution>

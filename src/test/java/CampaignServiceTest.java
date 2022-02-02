@@ -1,9 +1,7 @@
-import com.projectagora.DTO.*;
-import com.projectagora.InvalidCountryException;
-import com.projectagora.RealTimeBidderApp;
-import com.projectagora.service.BidService;
-import com.projectagora.service.CampaignService;
-import com.projectagora.tools.Helper;
+import com.thanosfloros.DTO.*;
+import com.thanosfloros.InvalidCountryException;
+import com.thanosfloros.RealTimeBidderApp;
+import com.thanosfloros.service.CampaignService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,7 +10,6 @@ import org.springframework.test.context.ContextConfiguration;
 import java.util.List;
 import java.util.Locale;
 
-import static com.projectagora.tools.Helper.generateBid;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

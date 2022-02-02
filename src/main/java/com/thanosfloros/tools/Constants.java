@@ -1,4 +1,4 @@
-package com.projectagora.tools;
+package com.thanosfloros.tools;
 
 public class Constants {
     public static final String ALL_COUNTRIES = "ALL COUNTRIES";

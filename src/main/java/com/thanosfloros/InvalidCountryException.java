@@ -1,4 +1,4 @@
-package com.projectagora;
+package com.thanosfloros;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

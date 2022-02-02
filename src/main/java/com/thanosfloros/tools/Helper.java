@@ -1,8 +1,8 @@
-package com.projectagora.tools;
+package com.thanosfloros.tools;
 
-import com.projectagora.DTO.BidRequest;
-import com.projectagora.DTO.MobileApp;
-import com.projectagora.DTO.MobileDevice;
+import com.thanosfloros.DTO.BidRequest;
+import com.thanosfloros.DTO.MobileApp;
+import com.thanosfloros.DTO.MobileDevice;
 
 import java.util.Random;
 

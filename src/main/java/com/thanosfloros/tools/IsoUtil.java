@@ -1,4 +1,4 @@
-package com.projectagora.tools;
+package com.thanosfloros.tools;
 
 import java.util.Locale;
 import java.util.Set;

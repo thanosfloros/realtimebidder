@@ -1,4 +1,4 @@
-package com.projectagora.DTO;
+package com.thanosfloros.DTO;
 
 public class BidResponse {
     private String id;

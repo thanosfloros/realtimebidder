@@ -1,4 +1,4 @@
-package com.projectagora.config;
+package com.thanosfloros.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

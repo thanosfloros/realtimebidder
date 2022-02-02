@@ -1,4 +1,4 @@
-package com.projectagora.DTO;
+package com.thanosfloros.DTO;
 
 public class MobileApp {
     private String id;

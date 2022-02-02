@@ -1,11 +1,10 @@
-package com.projectagora.service;
+package com.thanosfloros.service;
 
-import com.projectagora.DTO.BidRequest;
-import com.projectagora.DTO.BidResponse;
-import com.projectagora.DTO.Campaign;
-import com.projectagora.InvalidCountryException;
-import com.projectagora.tools.Helper;
-import com.projectagora.web.BidController;
+import com.thanosfloros.DTO.BidRequest;
+import com.thanosfloros.DTO.BidResponse;
+import com.thanosfloros.DTO.Campaign;
+import com.thanosfloros.InvalidCountryException;
+import com.thanosfloros.tools.Helper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

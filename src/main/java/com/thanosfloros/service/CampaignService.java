@@ -1,10 +1,10 @@
-package com.projectagora.service;
+package com.thanosfloros.service;
 
-import com.projectagora.DTO.Campaign;
-import com.projectagora.InvalidCountryException;
-import com.projectagora.tools.Constants;
-import com.projectagora.tools.Helper;
-import com.projectagora.tools.IsoUtil;
+import com.thanosfloros.DTO.Campaign;
+import com.thanosfloros.InvalidCountryException;
+import com.thanosfloros.tools.Constants;
+import com.thanosfloros.tools.Helper;
+import com.thanosfloros.tools.IsoUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

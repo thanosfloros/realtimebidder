@@ -1,18 +1,12 @@
-package com.projectagora.web;
+package com.thanosfloros.web;
 
-import com.projectagora.DTO.Campaign;
-import com.projectagora.service.CampaignService;
+import com.thanosfloros.DTO.Campaign;
+import com.thanosfloros.service.CampaignService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 /**
  * Controller for Campaigns API
